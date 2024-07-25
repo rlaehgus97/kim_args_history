@@ -22,9 +22,14 @@ def cmd():
 
     if args.scount:
         print(f"-s => {args.scount}")
+
     elif args.top:
         print(f"-t => {args.top}")
         if args.dt:
             print(f"-d => {args.dt}")
+            # print command of specific date
         else:
-            print("abs")
+            print("error: no date argument")
+    else:
+        # print instruction
+        parser.print_help()
