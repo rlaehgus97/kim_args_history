@@ -20,9 +20,9 @@ def cmd():
     args = parser.parse_args()
     print(args.scount, args.top, args.dt)
 
-    if args.scount:
+    if args.scount:   #args.scount == True
         print(f"-s => {args.scount}")
-
+        # print command count
     elif args.top:
         print(f"-t => {args.top}")
         if args.dt:
@@ -30,6 +30,7 @@ def cmd():
             # print command of specific date
         else:
             print("error: no date argument")
+            parser.print_help()
     else:
         # print instruction
         parser.print_help()
