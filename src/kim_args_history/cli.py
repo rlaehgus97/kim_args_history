@@ -29,8 +29,9 @@ def cmd():
             print(f"-d => {args.dt}")
             # print command of specific date
         else:
-            print("error: no date argument")
-            parser.print_help()
+            parser.error("error: you must use top arg with  date argument")
+            #parser.print_help()
+
     else:
         # print instruction
         parser.print_help()
