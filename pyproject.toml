@@ -21,7 +21,7 @@ test = [
 ]
 
 [project.scripts]
-my-history = 'kim_args_history.cli:cmd'
+my-history = "kim_args_history.cli:cmd"
 
 [project.urls]
 Homepage = "https://github.com/rlaehgus97/kim_args_history/issues"
