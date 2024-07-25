@@ -31,6 +31,15 @@ $ [pdm test|pytest]
 $ pdm add -dG test pytest pytest-cov
 ```
 
+### deploy
+```bash
+# dev branch
+$ pip install git+https://github.com/rlaehgus97/kim_args_history.git@0.2.0/args
+
+# main 
+pip install git+https://github.com/rlaehgus97/kim_args_history.git@main
+```
+
 ### reference
 https://pdm-project.org/en/latest/usage/dependency/
 
