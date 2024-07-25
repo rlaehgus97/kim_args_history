@@ -1,4 +1,5 @@
 # kim_args_history
+- parquet 파일의 정보를 cli 기반으로 조회
 
 ### 사용법
 ```
@@ -17,6 +18,21 @@ mkdir 1932
  sudo 1320
   pdm 1220
    rm 1104
+```
+
+### Dev env setting
+```
+$ git clone <URL>
+$ cd <PJT_NAME>
+$ pdm install
+$ [pdm test|pytest]
+
+# option
+$ pdm add -dG test pytest pytest-cov
+```
+
+### reference
+https://pdm-project.org/en/latest/usage/dependency/
 
 ### 주의사항
 git push 하기전 git status로 swp파일 있는지 확인 (tmp파일을 굳이 push할 필요 없다)
