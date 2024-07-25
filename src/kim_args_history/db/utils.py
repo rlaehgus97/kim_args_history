@@ -7,4 +7,4 @@ def top():
     ddf = sdf.drop(columns=['dt'])
 
     r = ddf.to_string(index=False)
-    print(r)
+    return r
