@@ -20,10 +20,16 @@ test = [
     "pytest-cov>=5.0.0",
 ]
 
+[tool.pytest.ini_options]
+pythonpath = [
+	".", "src",
+]
+
 [tool.pdm.scripts]
 test = "pytest"
 ctest = "pytest --cov"
 stest = "pytest -s"
+gitinstall = "pip install git+https://github.com/rlaehgus97/kim_args_history.git@0.2.0/args"
 
 [project.scripts]
 my-history = "kim_args_history.cli:cmd"
